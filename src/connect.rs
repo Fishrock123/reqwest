@@ -761,7 +761,7 @@ type BoxConn = Box<dyn AsyncConnWithInfo>;
 pub(crate) mod sealed {
     use super::*;
     #[derive(Debug)]
-    pub struct Unnameable(pub(super) Uri);
+    pub struct Unnameable(pub Uri);
 
     pin_project! {
         /// Note: the `is_proxy` member means *is plain text HTTP proxy*.
